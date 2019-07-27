@@ -1,0 +1,16 @@
+[
+  {
+    "_id": 1, 
+    "title": "Obriga edifícios a manterem uma obra de arte",
+    "answer": 1,
+    "image": "monalisa.png",
+    "description": "De acordo com a Lei Municipal Nº 10.036 de Porto Alegre (RS), qualquer edifício com área igual ou superior a 2.000m² deve conter, em local visível, uma obra de arte. Essa obra deve ter sido criada por um artista plástico cadastrado no Poder Executivo Municipal. \nPara se obter a Carta de Habilitação, é necessário comprovar que a obra de arte foi concluída e colocada no local previamente determinado no projeto. Sem isso, não se tem a aprovação da prefeitura para que o prédio seja inaugurado.\nAlém disso, essa obra não pode ser retirada, substituída ou alterada sem autorização prévia do Poder Executivo Municipal e, claro, os custos de manutenção da mesma serão de responsabilidade dos proprietários do edifício.\nPor fim, caso a edificação venha a ser demolida, a obra de arte não irá ficar com os donos do edifício, mas será revertida ao governo, que irá decidir o que fazer ela."
+  },
+  {
+    "_id": 2, 
+    "title": "Obriga agências bancárias a oferecerem material de leitura",
+    "answer": 1,
+    "image": "monalisa.png",
+    "description": "Em Balneário Camboriú, é obrigatório que agências bancárias ofereçam materiais de leitura a seus clientes.\nAs agências devem também priorizar os jornais e revistas de circulação local no momento de escolher esses materiais de leitura.\nAlém, disso, eles devem ser atualizados diariamente, semanalmente e mensalmente.\nEntão quem aí em Balneário estiver precisando colocar a leitura em dia, recomendo ir à agência mais próxima da sua casa."
+  }
+]

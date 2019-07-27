@@ -1,0 +1,26 @@
+@import '../../styles/_default';
+
+.option {
+  background: #111110;
+  border: 1px solid #383838;
+  min-width: 220px;
+  padding: 20px 10px;
+  font-family: $font-family-header;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  margin-right: 1em;
+  transition: all ease-in .1s;
+  text-shadow: 0 0 5px rgba(0,0,0,.7);
+  cursor: pointer;
+
+  @include phone-only {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background: $yellow;
+  }
+}

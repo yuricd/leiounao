@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500|Raleway:300&display=swap');
+
+$font-family-header: 'Oswald', sans-serif;
+$font-family-paragraph: 'Raleway', sans-serif;
+$yellow: #E1980B;
+$white: #FFF;
+$red: #E23B45;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $yellow;
+}
+
+
+body {
+  color: $white;
+  background: rgb(0,0,0);
+  font-weight: 300;
+  font-family: $font-family-paragraph;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-family: $font-family-header;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+}
+
+@mixin phone-only {
+  @media (max-width: 599px) { @content; }
+}
