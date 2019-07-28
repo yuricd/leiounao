@@ -20,13 +20,15 @@ $dark-grey: #111;
   color: #000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $white;
   background: rgb(0,0,0);
   font-weight: 300;
   font-family: $font-family-paragraph;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
   line-height: 1.5;
 }
 
