@@ -1,4 +1,4 @@
-# Lei ou Não
+![Lei ou Não](/public/images/leiounao.png)
 
 Lei ou Não is a web game about bizarre laws in Brazil. Developed in partnership with LAB - Leis Absurdas do Brasil.
 
