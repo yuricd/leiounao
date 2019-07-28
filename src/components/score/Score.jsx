@@ -26,7 +26,7 @@ function Score(props) {
         <p>Ah! E não se esqueça de compartilhar seu resultado com seus amigos!</p>
 
         <div className={styles.actions}>
-          <a href="/">Compartilhar resultado no Facebook</a>
+          <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.hostname}&quote=Eu acertei ${props.score} de ${dataLen} leis! E você, consegue dizer o que é lei e o que não é?`} target="_blank" rel="noopener noreferrer">Compartilhar resultado no Facebook</a>
           <a href="/">Refazer</a>
         </div>
 
