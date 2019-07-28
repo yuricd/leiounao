@@ -31,7 +31,7 @@ function Score(props) {
         </div>
 
         <div className={styles.credits}>
-          <span>Projeto de <a href="https://github.com/" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink}>Yuri Delgado</a> em parceria com <a href={labFacebook} target="_blank" rel="noopener noreferrer">LAB - Leis Absurdas do Brasil</a></span>
+          <span>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink}>Yuri Delgado</a> em parceria com <a href={labFacebook} target="_blank" rel="noopener noreferrer">LAB - Leis Absurdas do Brasil</a></span>
         </div>
       </div>
       
