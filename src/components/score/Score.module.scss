@@ -1,0 +1,90 @@
+@import '../../styles/_default';
+
+.score {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,.95);
+  color: #FFF;
+  z-index: 10;
+  top: 0;
+}
+
+.content {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include phone-only { 
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 2em auto;
+  }
+
+  h1 {
+    margin-bottom: .4em;
+    text-align: center;
+
+    @include phone-only { 
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.4;
+
+    @include phone-only { 
+      font-size: 1rem;
+    }
+  }
+}
+
+.credits {
+  opacity: .7;
+  font-size: 1rem;
+
+  @include phone-only { 
+    font-size: .8rem;
+  }
+}
+
+.actions {
+  margin: 4em 0 4em;
+  display: flex;
+  flex-direction: column;
+
+  @include phone-only { 
+    margin: 2em 0 2em;
+  }
+
+  a {
+    font-family: $font-family-header;
+    cursor: pointer;
+    color: $dark-grey;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background: #FFF;
+    opacity: .5;
+    transition: opacity .3s ease;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    @include phone-only { 
+      font-size: .9rem;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

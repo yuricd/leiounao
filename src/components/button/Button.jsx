@@ -1,34 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Button.module.scss';
+import { connect } from 'react-redux';
+import { incrementScore } from '../../actions';
 
 function Button(props) {
-  const { answered, given, expected, handleClick } = props;
+  const { answered, expected, handleClick, type } = props;
+
+  const [classStyle, setClassStyle] = useState('');
 
   const _handleClick = () => {
-    handleClick();
-  }
-
-  console.log({given, expected})
-
-  let style;
-  if (answered) {
-    if (given === expected) {
-      style = {
-        background: 'green',
+    handleClick && handleClick();
+    if (!answered) {
+      if (type === expected) {
+        setClassStyle(styles.correct);
+        props.dispatch(incrementScore());
+      } else {
+        setClassStyle(styles.wrong);
       }
     }
   }
-    
+
+  useEffect(() => {
+    if (!answered) {
+      setClassStyle('');
+    }
+  }, [answered])
+
   return (
     <button
-      className={styles.option}
+      className={`${styles.option} ${classStyle}`}
       onClick={_handleClick}
-      style={style}
     >
       {props.children}
     </button>
   );
-  
 }
 
-export default Button;
+export default connect()(Button);

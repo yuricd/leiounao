@@ -4,7 +4,8 @@ $font-family-header: 'Oswald', sans-serif;
 $font-family-paragraph: 'Raleway', sans-serif;
 $yellow: #E1980B;
 $white: #FFF;
-$red: #E23B45;
+$red: #CD1E28;
+$dark-grey: #111;
 
 * {
   margin: 0;
@@ -16,8 +17,8 @@ $red: #E23B45;
 
 ::selection {
   background-color: $yellow;
+  color: #000;
 }
-
 
 body {
   color: $white;
@@ -26,6 +27,12 @@ body {
   font-family: $font-family-paragraph;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  line-height: 1.5;
+}
+
+a {
+  color: $yellow;
+  text-decoration: none;
 }
 
 h1, h2 {
@@ -49,4 +56,13 @@ button {
 
 @mixin phone-only {
   @media (max-width: 599px) { @content; }
+}
+
+.fadeIn {
+  animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
