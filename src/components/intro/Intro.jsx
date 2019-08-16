@@ -12,7 +12,7 @@ function Intro(props) {
     <div className={`${styles.intro} ${styles.fadeIn}`}>
       <div className={styles.content}>
         <img src={leiounao} alt="Lei ou Não?" />
-        <p>Mostraremos um título e você escolherá se esse título é de uma lei, projeto de lei ou nenhum dos dois (uma "lei inventada"). São {dataLen} títulos que serão exibidos e, ao final, você saberá quantos pontos obteve.</p>
+        <p>Mostraremos um título e você escolherá se esse título é de uma lei, projeto de lei ou nenhum dos dois (uma "lei inventada"). Serão exibidos {dataLen} títulos e, ao final, você saberá quantos pontos obteve.</p>
         <p>Boa sorte!</p>
 
         <div className={styles.actions}>
