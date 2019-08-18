@@ -26,16 +26,14 @@ function Score(props) {
         <p>Ah! E não se esqueça de compartilhar seu resultado com seus amigos!</p>
 
         <div className={styles.actions}>
-          <a href={`https://www.facebook.com/sharer/sharer.php?u=${APP_URL}&quote=Eu acertei ${props.score} de ${dataLen} leis! E você, consegue dizer o que é lei e o que não é?`} target="_blank" rel="noopener noreferrer">Compartilhar resultado no Facebook</a>
-          <a href="/">Refazer</a>
+          <a id="share" href={`https://www.facebook.com/sharer/sharer.php?u=${APP_URL}&quote=Eu acertei ${props.score} de ${dataLen} leis! E você, consegue dizer o que é lei e o que não é?`} target="_blank" rel="noopener noreferrer">Compartilhar resultado no Facebook</a>
+          <a id="restart" href="/">Refazer</a>
         </div>
 
         <div className={styles.credits}>
           <span>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink} target="_blank" rel="noopener noreferrer">Yuri Delgado</a> em parceria com <a href={anarcozeTwitter} target="_blank" rel="noopener noreferrer">Anarcoze</a>.</span>
         </div>
       </div>
-      
-      
     </div>
   )
 }

@@ -18,7 +18,6 @@ function Intro(props) {
         <div className={styles.actions}>
           <button onClick={handleClick}>Começar</button>
         </div>
-
       </div>
     </div>
   )
