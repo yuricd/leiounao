@@ -8,6 +8,7 @@ import data from '../../data/data';
 import { optionsEnum } from '../../enums/enums';
 import styles from './Main.module.scss';
 import next from '../../images/next.svg';
+import ReactHtmlParser from 'react-html-parser';
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -111,12 +112,11 @@ function Main() {
                 >Não é lei</Button>
               </div>
             </div>
-
             <div className={`${styles.content} ${(showContent) ? styles.expand : ''}`}>
               {showContent && (
                 <div id="explanation" className={styles.fadeIn}>
                   <h2>{whatIs}</h2>
-                  <p>{data[current].description}</p>
+                  <p>{ReactHtmlParser(data[current].description)}</p>
                 </div>
               )}
             </div>

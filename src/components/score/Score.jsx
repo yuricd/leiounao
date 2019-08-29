@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Score.module.scss';
 import { connect } from 'react-redux';
 import data from '../../data/data';
-import { ydLink, anarcozeTwitter, APP_URL } from '../../constants/links';
+import { ydLink, APP_URL } from '../../constants/links';
 
 function Score(props) {
   const dataLen = data.length;;
@@ -31,7 +31,7 @@ function Score(props) {
         </div>
 
         <div className={styles.credits}>
-          <span>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink} target="_blank" rel="noopener noreferrer">Yuri Delgado</a> em parceria com <a href={anarcozeTwitter} target="_blank" rel="noopener noreferrer">Anarcoze</a>.</span>
+          <span>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink} target="_blank" rel="noopener noreferrer">Yuri Delgado</a>.</span>
         </div>
       </div>
     </div>
