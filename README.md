@@ -1,6 +1,6 @@
 ![Lei ou Não](/public/images/leiounao.png)
 
-Lei ou Não is a web game about bizarre laws in Brazil. Developed in partnership with LAB - Leis Absurdas do Brasil.
+Lei ou Não is a web game about bizarre laws in Brazil.
 
 ## Tech info
  - React (hooks only)
