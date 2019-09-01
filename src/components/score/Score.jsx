@@ -31,7 +31,19 @@ function Score(props) {
         </div>
 
         <div className={styles.credits}>
-          <span>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink} target="_blank" rel="noopener noreferrer">Yuri Delgado</a>.</span>
+          <section className={styles.author}>
+            <p>Projeto de <a href="https://github.com/yuricd/leiounao" target="_blank" rel="noopener noreferrer">código aberto</a> desenvolvido por <a href={ydLink} target="_blank" rel="noopener noreferrer">Yuri Delgado</a>.</p>
+          </section>
+
+          <section className={styles.author}>
+            <h2>Colaboradores</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/BrOrlandi/" target="_blank" rel="noopener noreferrer">BrOrlandi</a>
+              </li>
+            </ul>
+          </section>
+
         </div>
       </div>
     </div>

@@ -48,15 +48,36 @@
 
 .credits {
   opacity: .7;
-  font-size: 1rem;
 
   @include phone-only { 
     font-size: .8rem;
   }
+
+  p {
+    font-size: 1rem;
+  }
+
+  section {
+    margin-bottom: 2em;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: block;
+    }
+  }
 }
 
 .actions {
-  margin: 4em 0 4em;
+  margin: 4em 0 3em;
   display: flex;
   flex-direction: column;
 
